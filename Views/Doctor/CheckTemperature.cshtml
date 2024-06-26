@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Check Temperature";
+}
+<h2>Check Temperature</h2>
+<form method="post" asp-action="CheckTemperature">
+    <div>
+        <label for="temperature">Temperature:</label>
+        <input type="number" step="0.1" id="temperature" name="temperature" required />
+    </div>
+    <button type="submit">Check</button>
+</form>
+
+@if (ViewBag.Diagnosis != null)
+{
+    <p>@ViewBag.Diagnosis</p>
+}

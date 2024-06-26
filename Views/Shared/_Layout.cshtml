@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - MvcApp</title>
+</head>
+<body>
+    <header>
+        <h1>MvcApp</h1>
+        <nav>
+            <a href="/Home/About">About</a>
+            <a href="/Home/Contact">Contact</a>
+            <a href="/Home/Projects">Projects</a>
+            <a href="/FeverCheck">Check Temperature</a> 
+        </nav>
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <footer>
+        &copy; @DateTime.Now.Year - Shayan
+    </footer>
+</body>
+</html>
